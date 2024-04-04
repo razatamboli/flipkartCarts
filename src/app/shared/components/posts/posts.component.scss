@@ -1,0 +1,63 @@
+
+li{
+    list-style: none;
+}
+
+p{
+    border: 1px solid bisque;
+    color: white;
+    background-color: black;
+}
+
+.notavailable{
+    filter: blur(1px) grayscale(1);
+}
+
+.disabled{
+    cursor: not-allowed;
+}
+
+.item-name{
+    transform: translateX(0);
+    animation: anime1 2s ease-in-out;
+}
+
+.item-brand{
+    animation: anime2 2s ease-in-out;
+}
+
+@keyframes anime1 {
+    0%{
+        transform: translateX(410%);
+    }
+    30%{
+        transform: translateX(-20%);
+    }
+    80%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes anime2 {
+    0%{
+        transform: translateX(-410%);
+    }
+    30%{
+        transform: translateX(20%);
+    }
+    80%{
+        transform: translateX(-80%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.rating{
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
